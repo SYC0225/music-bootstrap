@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/*body{*/
+/*    margin: 0;*/
+/*    height: 100vh;*/
+/*    !*display: flex;*!*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;*/
+/*    background-color: rgba(43,43,43,1.00);*/
+/*}*/
+@media (min-width: 576px) {
+    . container {
+        max-width: 90%;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 90%;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 90%;
+    }
+}
+h5{
+    color:#fff;
+}
+.text{
+    color: #747477;
+}
+.foot{
+    margin-left:35%;
+    color:#fff;
+}

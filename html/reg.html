@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title></title>
+    <!-- 引入4个文件，必须注意导入顺序-->
+    <link rel="stylesheet" href="../css/bootstrap.css"/>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/reg.css">
+    <script src="../js/reg.js"></script>
+</head>
+<body>
+<div class="cont">
+    <div class="re bg-white">
+        <div class="header mt-2">
+            <img src="../images/title.png" alt="">
+        </div>
+        <div class="reg">
+<!--            <form action="" class="form-inline"></form>-->
+                <span>---使用第三方登录---</span>
+                <div class="reg-img row pt-3">
+                    <div class="xl">
+                        <a  href="javascript:void(0);" onclick="ShowDiv1('MyDiv1','fade')"><img src="../images/登录-微博登录-正常.png" alt=""></a>
+                    </div>
+                    <div class="weixin ">
+                        <a href="javascript:void(0);" onclick="ShowDiv2('MyDiv2','fade')"><img src="../images/微信登录.png" alt=""></a>
+                    </div>
+                    <div class="qq">
+                        <a href="javascript:void(0);" onclick="ShowDiv3('MyDiv3','fade')"><img src="../images/QQ登录.png" alt=""></a>
+                    </div>
+                </div>
+            <div class="phone mt-2">
+                <a href="javascript:;">使用手机号注册</a>
+            </div>
+            <div class="login mr-2">
+                已有账号？<a href="login.html" >直接登录</a>
+            </div>
+
+    </div>
+    </div>
+    <!--弹出层时背景层DIV-->
+    <div id="fade" class="black_overlay">
+    </div>
+    <div id="MyDiv1" class="white_content">
+        <div class="div-x" style="text-align: right; cursor: default; height: 40px;">
+            <span style="font-size: 26px;" onclick="CloseDiv('MyDiv1','fade')">x</span>
+        </div>
+        <div class="div1-title">
+            使用你的微博账号访问<a href="">music</a>
+        </div>
+        <div class="div1-body">
+            <span>账号:</span><input type="text" placeholder="请使用您的微博账号登录"><br>
+            <span>密码:</span><input type="password" placeholder="请输入密码">
+        </div>
+        <hr>
+        <div class="div1-button">
+            <a href="index.html" class="btn btn-danger">登录</a>
+            <a href="javasrcript:;" class="btn btn-light">取消</a>
+        </div>
+    </div>
+    <div id="MyDiv2" class="white_content2">
+        <div class="div-x"  style="text-align: right; cursor: default; height: 40px;">
+            <span style="font-size: 26px;" onclick="CloseDiv('MyDiv2','fade')">x</span>
+        </div>
+        <div class="div2-body" >
+            <span>微信登录</span>
+            <div class="div2-img">
+                <img src="../images/微信二维码登录.png" alt="">
+            </div>
+            <a class="btn btn-dark" href="javascript:;">请使用微信扫一扫登录music</a>
+        </div>
+    </div>
+    <div id="MyDiv3" class="white_content3">
+        <div class="div-x"   style="text-align: right; cursor: default; height: 40px;">
+            <span style="font-size: 26px;" onclick="CloseDiv('MyDiv3','fade')">x</span>
+        </div>
+        <div class="div3-body">
+            <span>快速安全登录</span><br>
+            <a href="javascript:;">请使用QQ手机版扫描二维码，</a><br>
+            <a href="javascript:;">或点击头像授权登录。</a><br>
+            <div class="div3-img">
+                <a href="index.html"><img src="../images/QQ二维码登录.png" alt=""></a>
+                <a href="index.html"><img src="../images/QQ头像.png" alt=""></a>
+            </div>
+            <div class="div3-a">
+                <a href="">账号密码登录 | </a>
+                <a href="">注册新账号 | </a>
+                <a href="">意见反馈 </a>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@media (min-width: 576px) {
+    . container {
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 100%;
+    }
+}
+.h_c{
+    background-color: #AD5A5A;
+}
+.h_c_img{
+    width:20%;
+    height:100%;
+}
+
+.input-group{
+    height: 70px;
+    width:800px;
+    margin: 100px auto 0 auto;
+    margin-left: 50px;
+}
+.parent{
+    position: relative;
+}
+.search{
+    width: 300px;
+    height:40px;
+    borderborder-radius: 18px;
+    outline: none;
+    border: 1px solid #ccc;
+    padding-left: 20px;
+    position: absolute;
+}
+.btn {
+    height: 35px;
+    width: 35px;
+    position: absolute;
+    background: url("../images/search_icon.png") no-repeat -2px -250px;
+    background-color: #0b2e13;
+    top: 6px;
+    left: 285px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.bg-white{
+    width:100%;
+}
+.font_small{
+    width:40%;
+    height:40px;
+    border-radius: 5px;
+    margin-top:10px;
+}
+.nav-item{
+    /*font:0.25rem;*/
+    padding-left:5rem;
+}
+.nav-item>a{
+    width: 100%;
+}
+ul.nav{
+    height:100%;
+}
+.nav-link{
+    color:#f7f7f7;
+}
+.button{
+    width:40px;
+    height:40px;
+    margin-top:10px;
+    margin-left: -50px;
+}
+.ipt_img :active{
+    width:30px;
+    height:30px;
+    margin-top:20px;
+    background-color: #fff;
+}
+.mt-1{
+    margin-left: -400px;
+}
+.login{
+    color:#fff;
+}
+a:hover{
+    /*font-size: 18px;*/
+    color:#fff;
+    text-decoration: none;
+}
+.navbar-brand{
+    float: right;
+}
+.h-title{
+    width:70%;
+    height:50px;
+    margin-top:118px;
+}
+.f-input{
+    width:20%;
+    height:50px;
+    float: right;
+}

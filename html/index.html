@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title></title>
+    <!-- 引入4个文件，必须注意导入顺序-->
+    <link rel="stylesheet" href="../css/bootstrap.css"/>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <script src="../js/jquery-1.8.3.min.js"></script>
+    <script src="../js/Carousel.js"></script>
+    <script src="../js/PicCarousel.js"></script>
+    <script src="../js/index.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/dist/css/main.min.css">
+</head>
+<body>
+
+<iframe class="my_header" src="header.html" frameborder="0" frameborder="0" scrolling="no">
+
+</iframe>
+
+<div class="container">
+    <div id="demo" class="carousel" data-ride="carousel">
+        <!-- 1.轮播图片carousel-inner-->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="w-100" src="../images/banner/banner.jpg"/>
+            </div>
+            <div class="carousel-item">
+                <img class="w-100" src="../images/banner/banner2.jpg"/>
+            </div>
+            <div class="carousel-item">
+                <img class="w-100" src="../images/banner/banner3.jpg"/>
+            </div>
+            <div class="carousel-item">
+                <img class="w-100" src="../images/banner/banner4.jpg"/>
+            </div>
+        </div>
+        <!-- 2.左右箭头-->
+        <a data-slide="prev" href="#demo" class="carousel-control-prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a data-slide="next" href="#demo" class="carousel-control-next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+        <!-- 3.轮播指示器-->
+        <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+            <li data-target="#demo" data-slide-to="3"></li>
+        </ul>
+    </div>
+    <div class="body">
+        <!-- 4.选项卡   -->
+        <div class="xx col-lg-8 col-md-6 col-sm-12">
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a href="#tab1" class="nav-link active" data-toggle="tab"><img class="nav-img" src="../images/新歌榜.png" alt="">新歌榜</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#tab2" class="nav-link" data-toggle="tab"><img class="nav-img" src="../images/经典.png" alt="">经典怀旧</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#tab3" class="nav-link" data-toggle="tab"><img class="nav-img" src="../images/专辑.png" alt="">个人专辑</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#tab4" class="nav-link" data-toggle="tab"><img class="nav-img" src="../images/电台.png" alt="">电台</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#tab5" class="nav-link" data-toggle="tab"><img class="nav-img" src="../images/排行榜.png" alt="">排行榜</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#tab6" class="nav-link" data-toggle="tab"><img class="nav-img" src="../images/最新.png" alt="">最新歌曲</a>
+                </li>
+            </ul>
+            <div class="tab-content  col-lg-12 col-md-12 col-sm-12">
+                <div id="tab1" class="tab-pane active">
+                    <!--  4.New Releases  -->
+                    <div class="releases row pt-3">
+                        <div class=" ml-3 mr-3">
+                            <a href="javascript:;"><img class="r_img" src="../images/New%20Releases/Titanic.jpg" alt=""></a>
+                            <img src="../images/bofang.png" class="bf" id="bf" onclick="change_pic()">
+                            <p><a class="m_name" href="#">My Heart Will Go On</a></p>
+                        </div>
+                        <div class=" ml-3 mr-3">
+                            <a href="javascript:;"><img class="r_img" src="../images/New%20Releases/hall%20of%20fame.jpg" alt=""></a>
+                            <p><a class="m_name" href="#">Hall Of Fane</a></p>
+                        </div>
+                        <div class=" ml-3 mr-3">
+                            <a href="javascript:;"><img class="r_img" src="../images/New%20Releases/east%20of%20eden.jpg" alt=""></a>
+                            <p><a class="m_name" href="#">east of eden</a></p>
+                        </div>
+                        <div class=" ml-3 mr-3">
+                            <img class="r_img" src="../images/New%20Releases/ghsy.jpg" alt="">
+                            <p><a class="m_name" href="#">光辉岁月</a></p>
+                        </div>
+                        <div class=" ml-3 mr-3">
+                            <img class="r_img" src="../images/New%20Releases/wzzhn.jpg" alt="">
+                            <p><a class="m_name" href="javascript:;">我只在乎你</a></p>
+                        </div>
+                        <div class=" ml-3 mr-3">
+                            <img class="r_img" src="../images/New%20Releases/ydsakycl.jpg" alt="">
+                            <p><a class="m_name" href="javascript:;">有多少爱可以重来</a></p>
+                        </div>
+                        <div class=" ml-3 mr-3">
+                            <img class="r_img" src="../images/New%20Releases/zlmds.jpg" alt="">
+                            <p><a class="m_name" href="javascript:;">最浪漫的事</a></p>
+                        </div>
+                        <div class=" ml-3 mr-3">
+                            <img class="r_img" src="../images/New%20Releases/tzdn.jpg" alt="">
+                            <p><a class="m_name" href="javascript:;">同桌的你</a></p>
+                        </div>
+                        <div class=" ml-3 mr-3">
+                            <img class="r_img" src="../images/New%20Releases/xblq.jpg" alt="">
+                            <p><a class="m_name" href="javascript:;">新不了情</a></p>
+                        </div>
+                        <div class=" ml-3 mr-3">
+                            <img class="r_img" src="../images/New%20Releases/ax.jpg" alt="">
+                            <p><a class="m_name" href="javascript:;">暗香</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab2" class="tab-pane">
+                    <!--  5.经典怀旧 -->
+                    <div class="releases row  pt-3">
+                        <div class=" ml-3 mr-3">
+                            <a href="javascript:;"><img class="r_img" src="../images/New%20Releases/Titanic.jpg" alt=""></a>
+                            <p><a class="m_name" href="#">My Heart Will Go On</a></p>
+                        </div>
+                        <div class=" ml-3 mr-3">
+                            <img class="r_img" src="../images/New%20Releases/ghsy.jpg" alt="">
+                            <p><a class="m_name" href="javascript:;">光辉岁月</a></p>
+                        </div>
+                        <div class=" ml-3 mr-3">
+                            <img class="r_img" src="../images/New%20Releases/wzzhn.jpg" alt="">
+                            <p><a class="m_name" href="javascript:;">我只在乎你</a></p>
+                        </div>
+                        <div class=" ml-3 mr-3">
+                            <img class="r_img" src="../images/New%20Releases/ydsakycl.jpg" alt="">
+                            <p><a class="m_name" href="#">有多少爱可以重来</a></p>
+                        </div>
+                        <div class=" ml-3 mr-3">
+                            <a href="javascript:;"><img class="r_img" src="../images/New%20Releases/hall%20of%20fame.jpg" alt=""></a>
+                            <p><a class="m_name" href="#">Hall Of Fane</a></p>
+                        </div>
+                        <div class=" ml-3 mr-3">
+                            <a href="javascript:;"><img class="r_img" src="../images/New%20Releases/east%20of%20eden.jpg" alt=""></a>
+                            <p><a class="m_name" href="#">east of eden</a></p>
+                        </div>
+                        <div class=" ml-3 mr-3">
+                            <img class="r_img" src="../images/New%20Releases/zlmds.jpg" alt="">
+                            <p><a class="m_name" href="javascript:;">最浪漫的事</a></p>
+                        </div>
+                        <div class=" ml-3 mr-3">
+                            <img class="r_img" src="../images/New%20Releases/tzdn.jpg" alt="">
+                            <p><a class="m_name" href="javascript:;">同桌的你</a></p>
+                        </div>
+                        <div class=" ml-3 mr-3">
+                            <img class="r_img" src="../images/New%20Releases/xblq.jpg" alt="">
+                            <p><a class="m_name" href="javascript:;">新不了情</a></p>
+                        </div>
+                        <div class=" ml-3 mr-3">
+                            <img class="r_img" src="../images/New%20Releases/ax.jpg" alt="">
+                            <p><a class="m_name" href="javascript:;">暗香</a></p>
+                        </div>
+                    </div>
+                </div>
+                <!--   6.个人专辑   -->
+                <div id="tab3" class="tab-pane">
+                    <div class="releases row pt-3">
+                        <div class=" ml-3 mr-3">
+                            <a href="#"><img class="r_img" src="../images/New%20Releases/Titanic.jpg" alt=""></a>
+                            <p><a class="m_name" href="javascript:;">My Heart Will Go On</a></p>
+                        </div>
+                        <div class=" ml-3 mr-3">
+                            <a href="#"><img class="r_img" src="../images/New%20Releases/hall%20of%20fame.jpg" alt=""></a>
+                            <p><a class="m_name" href="javascript:;">Hall Of Fane</a></p>
+                        </div>
+                        <div class=" ml-3 mr-3">
+                            <a href="#"><img class="r_img" src="../images/New%20Releases/east%20of%20eden.jpg" alt=""></a>
+                            <p><a class="m_name" href="javascript:;">east of eden</a></p>
+                        </div>
+                        <div class=" ml-3 mr-3">
+                            <img class="r_img" src="../images/New%20Releases/ghsy.jpg" alt="">
+                            <p><a class="m_name" href="javascript:;">光辉岁月</a></p>
+                        </div>
+                        <div class=" ml-3 mr-3">
+                            <img class="r_img" src="../images/New%20Releases/wzzhn.jpg" alt="">
+                            <p><a class="m_name" href="javascript:;">我只在乎你</a></p>
+                        </div>
+                        <div class=" ml-3 mr-3">
+                            <img class="r_img" src="../images/New%20Releases/ydsakycl.jpg" alt="">
+                            <p><a class="m_name" href="javascript:;">有多少爱可以重来</a></p>
+                        </div>
+                        <div class=" ml-3 mr-3">
+                            <img class="r_img" src="../images/New%20Releases/zlmds.jpg" alt="">
+                            <p><a class="m_name" href="#">最浪漫的事</a></p>
+                        </div>
+                        <div class=" ml-3 mr-3">
+                            <img class="r_img" src="../images/New%20Releases/tzdn.jpg" alt="">
+                            <p><a class="m_name" href="javascript:;">同桌的你</a></p>
+                        </div>
+                        <div class=" ml-3 mr-3">
+                            <img class="r_img" src="../images/New%20Releases/xblq.jpg" alt="">
+                            <p><a class="m_name" href="javascript:;">新不了情</a></p>
+                        </div>
+                        <div class=" ml-3 mr-3">
+                            <img class="r_img" src="../images/New%20Releases/ax.jpg" alt="">
+                            <p><a class="m_name" href="javascript:;">暗香</a></p>
+                        </div>
+                    </div>
+                </div>
+                <!--  7.电台      -->
+                <div id="tab4" class="tab-pane">
+                    <div class="releases row pt-3 bg-white">
+                        <div class="ml-3 mr-3 table-4">
+                            <a href="javascript:;"><img src="../images/麦克风.png" alt=""></a>
+                            <p><a href="javascript:;">创作|翻唱</a></p>
+                        </div>
+                        <div class="ml-3 mr-3 table-4">
+                            <a href="javascript:;"><img src="../images/耳机.png" alt=""></a>
+                            <p><a href="javascripy:;">3D|电子</a></p>
+                        </div>
+                        <div class=" ml-3 mr-3 table-4">
+                            <a href="javascript:;"><img src="../images/情感.png" alt=""></a>
+                            <p><a href="javascripy:;">3D|电子</a></p>
+                        </div>
+                        <div class=" ml-3 mr-3 table-4">
+                            <a href="javascript:;"><img src="../images/耳机.png" alt=""></a>
+                            <p><a href="javascripy:;">情感调频</a></p>
+                        </div>
+                        <div class=" ml-3 mr-3 table-4">
+                            <a href="javascript:;"><img src="../images/历史.png" alt=""></a>
+                            <p><a href="javascripy:;">人文历史</a></p>
+                        </div>
+                        <div class=" ml-3 mr-3 table-4">
+                            <a href="javascript:;"><img src="../images/有声书.png" alt=""></a>
+                            <p><a href="javascripy:;">有声书</a></p>
+                        </div>
+                        <div class=" ml-3 mr-3 table-4">
+                            <a href="javascript:;"><img src="../images/二次元.png" alt=""></a>
+                            <p><a href="javascripy:;">二次元</a></p>
+                        </div>
+                        <div class=" ml-3 mr-3 table-4">
+                            <a href="javascript:;"><img src="../images/商业财经.png" alt=""></a>
+                            <p><a href="javascripy:;">商业财经</a></p>
+                        </div>
+                        <div class=" ml-3 mr-3 table-4">
+                            <a href="javascript:;"><img src="../images/外语.png" alt=""></a>
+                            <p><a href="javascripy:;">外语世界</a></p>
+                        </div>
+                        <div class=" ml-3 mr-3 table-4">
+                            <a href="javascript:;"><img src="../images/脱口秀.png" alt=""></a>
+                            <p><a href="javascripy:;">脱口秀</a></p>
+                        </div>
+                        <div class=" ml-3 mr-3 table-4">
+                            <a href="javascript:;"><img src="../images/相声小品.png" alt=""></a>
+                            <p><a href="javascripy:;">相声小品</a></p>
+                        </div>
+                        <div class=" ml-3 mr-3 table-4">
+                            <a href="javascript:;"><img src="../images/音乐.png" alt=""></a>
+                            <p><a href="javascripy:;">音乐故事</a></p>
+                        </div>
+                        <div class=" ml-3 mr-3 table-4">
+                            <a href="javascript:;"><img src="../images/专业知识技能.png" alt=""></a>
+                            <p><a href="javascripy:;">知识技能</a></p>
+                        </div>
+                        <div class=" ml-3 mr-3 table-4">
+                            <a href="javascript:;"><img src="../images/广播剧.png" alt=""></a>
+                            <p><a href="javascripy:;">广播剧</a></p>
+                        </div>
+                        <div class=" ml-3 mr-3 table-4">
+                            <a href="javascript:;"><img src="../images/科技.png" alt=""></a>
+                            <p><a href="javascripy:;">科学技术</a></p>
+                        </div>
+                        <div class=" ml-3 mr-3 table-4">
+                            <a href="javascript:;"><img src="../images/明星.png" alt=""></a>
+                            <p><a href="javascripy:;">明星主播</a></p>
+                        </div>
+                        <div class=" ml-3 mr-3 table-4">
+                            <a href="javascript:;"><img src="../images/疑问.png" alt=""></a>
+                            <p><a href="javascripy:;">我要做主播？</a></p>
+                        </div>
+                    </div>
+                    <!--推荐节目-->
+                    <div class="jeim">
+                        <div class="tuij">
+                            <div class="tj-title">
+                                <span class="t-left">推荐节目</span>
+                                <span class="t-right">更多></span>
+                            </div>
+                            <div class="tj-body">
+                                <table class="table">
+                                    <tr class="tab-tr">
+                                        <td class="t-t-1" rowspan="2"><img src="../images/房东的猫.jpg" alt=""></td>
+                                        <td>房东的猫直播精彩回放(完整版)</td>
+                                        <td class="t-t-r" rowspan="2"><button class="t-t-btn">明星做主播</button></td>
+                                    </tr>
+                                    <tr class="tab-tr">
+                                        <td>音乐人来了</td>
+                                    </tr>
+                                </table>
+                                <table class="table">
+                                    <tr class="tab-tr">
+                                        <td class="t-t-1" rowspan="2"><img src="../images/房东的猫.jpg" alt=""></td>
+                                        <td>房东的猫直播精彩回放(完整版)</td>
+                                        <td class="t-t-r" rowspan="2"><button class="t-t-btn">明星做主播</button></td>
+                                    </tr>
+                                    <tr class="tab-tr">
+                                        <td>音乐人来了</td>
+                                    </tr>
+                                </table>
+                                <table class="table">
+                                    <tr class="tab-tr">
+                                        <td class="t-t-1" rowspan="2"><img src="../images/房东的猫.jpg" alt=""></td>
+                                        <td>房东的猫直播精彩回放(完整版)</td>
+                                        <td class="t-t-r" rowspan="2"><button class="t-t-btn">明星做主播</button></td>
+                                    </tr>
+                                    <tr class="tab-tr">
+                                        <td>音乐人来了</td>
+                                    </tr>
+                                </table>
+                                <table class="table">
+                                    <tr class="tab-tr">
+                                        <td class="t-t-1" rowspan="2"><img src="../images/房东的猫.jpg" alt=""></td>
+                                        <td>房东的猫直播精彩回放(完整版)</td>
+                                        <td class="t-t-r" rowspan="2"><button class="t-t-btn">明星做主播</button></td>
+                                    </tr>
+                                    <tr class="tab-tr">
+                                        <td>音乐人来了</td>
+                                    </tr>
+                                </table>
+                                <table class="table">
+                                    <tr class="tab-tr">
+                                        <td class="t-t-1" rowspan="2"><img src="../images/房东的猫.jpg" alt=""></td>
+                                        <td>房东的猫直播精彩回放(完整版)</td>
+                                        <td class="t-t-r" rowspan="2"><button class="t-t-btn">明星做主播</button></td>
+                                    </tr>
+                                    <tr class="tab-tr">
+                                        <td>音乐人来了</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- 节目排行榜-->
+                        <div class="paih">
+                            <div class="ph-title">
+                                <span class="ph-left">节目排行榜</span>
+                                <span class="ph-right">更多></span>
+                            </div>
+                            <div>
+
+                                <table class="table">
+                                    <tr class="tab-tr">
+                                        <td class="t-t-1" rowspan="2"><img src="../images/房东的猫.jpg" alt=""></td>
+                                        <td>房东的猫直播精彩回放(完整版)</td>
+                                        <td class="t-t-r" rowspan="2"><button class="t-t-btn">明星做主播</button></td>
+                                    </tr>
+                                    <tr class="tab-tr">
+                                        <td>音乐人来了</td>
+                                    </tr>
+                                </table>
+                                <table class="table">
+                                    <tr class="tab-tr">
+                                        <td class="t-t-1" rowspan="2"><img src="../images/房东的猫.jpg" alt=""></td>
+                                        <td>房东的猫直播精彩回放(完整版)</td>
+                                        <td class="t-t-r" rowspan="2"><button class="t-t-btn">明星做主播</button></td>
+                                    </tr>
+                                    <tr class="tab-tr">
+                                        <td>音乐人来了</td>
+                                    </tr>
+                                </table>
+                                <table class="table">
+                                    <tr class="tab-tr">
+                                        <td class="t-t-1" rowspan="2"><img src="../images/房东的猫.jpg" alt=""></td>
+                                        <td>房东的猫直播精彩回放(完整版)</td>
+                                        <td class="t-t-r" rowspan="2"><button class="t-t-btn">明星做主播</button></td>
+                                    </tr>
+                                    <tr class="tab-tr">
+                                        <td>音乐人来了</td>
+                                    </tr>
+                                </table>
+                                <table class="table">
+                                    <tr class="tab-tr">
+                                        <td class="t-t-1" rowspan="2"><img src="../images/房东的猫.jpg" alt=""></td>
+                                        <td>房东的猫直播精彩回放(完整版)</td>
+                                        <td class="t-t-r" rowspan="2"><button class="t-t-btn">明星做主播</button></td>
+                                    </tr>
+                                    <tr class="tab-tr">
+                                        <td>音乐人来了</td>
+                                    </tr>
+                                </table>
+                                <table class="table">
+                                    <tr class="tab-tr">
+                                        <td class="t-t-1" rowspan="2"><img src="../images/房东的猫.jpg" alt=""></td>
+                                        <td>房东的猫直播精彩回放(完整版)</td>
+                                        <td class="t-t-r" rowspan="2"><button class="t-t-btn">明星做主播</button></td>
+                                    </tr>
+                                    <tr class="tab-tr">
+                                        <td>音乐人来了</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!--  榜单  -->
+        <div class="htmleaf-container col-lg-4 col-md-5 col-sm-12">
+                <div class="b_d">
+                    <ul>
+                        <li class="b_li"><a class="b_a" href="javascript:;"><img src="../images/榜单.png" alt="">榜单</a></li>
+                    </ul>
+                </div>
+
+                <div class="b_list">
+                    <img class="b_img" src="../images/邓紫棋.jpg" alt="">
+                    <div>
+                        <p class="b_p">光年之外</p>
+                    </div>
+
+                    <div class="htmleaf-content">
+                        <div class="ready-player mt-2">
+                            <audio crossorigin>
+                                <source src="../audio/北迁-%20-%20光年之外（Cover：摩登兄弟）.mp3" type="audio/mpeg">
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+
+            <!--歌曲列表-->
+            <div class="song-list">
+                <table class="list-s">
+                    <tr>
+                        <td class="list-left">
+                            <div class="l-left">
+                                <span>1</span>
+                                光年之外
+                            </div>
+                        </td>
+                        <td class="list-right">
+                            <span>邓紫棋</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="list-left">
+                            <div class="l-left">
+                                <span>2</span>
+                                光年之外
+                            </div>
+                        </td>
+                        <td class="list-right">
+                            <span>邓紫棋</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="list-left">
+                            <div class="l-left">
+                                <span>3</span>
+                                光年之外
+                            </div>
+                        </td>
+                        <td class="list-right">
+                            <span>邓紫棋</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="list-left">
+                            <div class="l-left">
+                                <span>4</span>
+                                光年之外
+                            </div>
+                        </td>
+                        <td class="list-right">
+                            <span>邓紫棋</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="list-left">
+                            <div class="l-left">
+                                <span>5</span>
+                                光年之外
+                            </div>
+                        </td>
+                        <td class="list-right">
+                            <span>邓紫棋</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="list-left">
+                            <div class="l-left">
+                                <span>6</span>
+                                光年之外
+                            </div>
+                        </td>
+                        <td class="list-right">
+                            <span>邓紫棋</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="list-left">
+                            <div class="l-left">
+                                <span>7</span>
+                                光年之外
+                            </div>
+                        </td>
+                        <td class="list-right">
+                            <span>邓紫棋</span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+        <!--  7.Featured Albums  -->
+        <div class="mt-4 py-2">
+            <span class="f-1">Featured Albums</span>
+        </div>
+        <!--  7-1 轮播图  -->
+        <div class="poster-main col-sm-12 col-lg-12 col-md-12 mt-2">
+            <div class="poster-btn poster-prev-btn"></div>
+            <ul class="poster-list">
+                <li class="poster-item"><a href="#"><img src="../images/poster/v1.jpg"></a>
+                </li>
+                <li class="poster-item"><a href="#"><img src="../images/poster/v2.jpg"></a>
+                </li>
+                <li class="poster-item"><a href="#"><img src="../images/poster/v3.jpg"></a>
+                </li>
+                <li class="poster-item"><a href="#"><img src="../images/poster/v4.jpg"></a>
+                </li>
+                <li class="poster-item"><a href="#"><img src="../images/poster/v5.jpg"></a>
+                </li>
+            </ul>
+            <div class="poster-btn poster-next-btn"></div>
+        </div>
+        <script src="../js/Carousel.js"></script>
+        <script>
+            //$(".poster-main").Carousel("init");
+
+            $(".poster-main").Carousel({
+                // "width": 100,
+                "height": 260,
+                "posterWidth": 450,
+                "posterHeight": 252,
+                "scale": 0.85,
+                "speed": 1000,
+                "autoPlay": true,
+                "delay": 1500,
+                "verticalAlign": "middle"
+            });
+
+        </script>
+    <script src="../css/dist/js/app.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            new GreenAudioPlayer('.ready-player');
+        });
+    </script>
+
+        <!--  7.音乐信息  -->
+
+    <iframe class="my_footer" src="footer.html" frameborder="0" frameborder="0" scrolling="no"></iframe>
+</div>
+</body>
+</html>
